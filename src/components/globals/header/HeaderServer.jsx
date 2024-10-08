@@ -47,8 +47,8 @@ export default function HeaderServer() {
 
     return (
         <>
-            <navbar className='font-poppinsRegular p-5 flex items-center justify-between container mx-auto dark:bg-black dark:text-[#ffffff]'>
-                <div className=' relative h-[67px] w-[279px]'>
+            <navbar className='font-poppinsRegular p-5 flex items-center justify-between container mx-auto bg-white dark:bg-black dark:text-[#ffffff]'>
+                <div className=' relative h-[50px] w-[210px] md:h-[67px] md:w-[279px]'>
                     <Image className=" absolute object-cover" src={headerData.logo} alt='logo' fill />
                 </div>
 
@@ -78,7 +78,7 @@ export default function HeaderServer() {
 
             {
                 open && 
-                <div className='flex xl:hidden flex-col items-center gap-10 text-lg'>
+                <div className=' w-full bg-white dark:bg-black dark:text-[#ffffff] absolute top-24 z-50 flex xl:hidden flex-col items-center gap-10 text-lg'>
                     <ul className='flex flex-col items-center gap-10  '>
                         {
                             headerData.navLinks.map((el) => 
