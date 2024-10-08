@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         poppinsRegular: ["poppinsRegular", "sans-serif"],
+        poppinsSemiBold: ["poppinsSemiBold", "sans-serif"],
       },
     },
   },

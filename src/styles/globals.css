@@ -8,3 +8,9 @@
     src: url("/fonts/Poppins/Poppins-Regular.ttf");
     url: url("/fonts/Poppins/Poppins-Regular.ttf")format("ttf"),
 }
+
+@font-face {
+    font-family: "poppinsSemiBold";
+    src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+    url: url("/fonts/Poppins/Poppins-SemiBold.ttf")format("ttf"),
+}
