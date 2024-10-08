@@ -1,4 +1,4 @@
-import HeaderServer from "@/components/globals/header/HeaderServer";
+import HeaderClient from "@/components/globals/header/HeaderClient";
 import "../styles/globals.css";
 
 export const metadata = {
@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={``}>
-        <HeaderServer />
+        <HeaderClient />
         {children}
       </body>
     </html>
