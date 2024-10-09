@@ -52,11 +52,11 @@ export default function HeaderClient() {
     return (
         <div className='bg-white dark:bg-black dark:text-[#ffffff]'>
             <navbar className='font-poppinsRegular p-5 flex items-center justify-between container mx-auto g-white dark:bg-black dark:text-[#ffffff]'>
-                <div className=' dark:hidden relative h-[50px] w-[210px] md:h-[67px] md:w-[279px]'>
+                <div className=' block dark:hidden relative h-[50px] w-[210px] md:h-[67px] md:w-[279px]'>
                     <Image className=" absolute object-cover" src={headerData.logo.light} alt='logo' fill />
                 </div>
 
-                <div className='relative h-[50px] w-[210px] md:h-[67px] md:w-[279px]'>
+                <div className=' hidden dark:block relative h-[50px] w-[210px] md:h-[67px] md:w-[279px]'>
                     <Image className=" absolute object-cover" src={headerData.logo.dark} alt='logo' fill />
                 </div>
 

@@ -57,28 +57,28 @@ const heroData = {
 export default function HeroServer() {
     return (
         <div className=' bg-white dark:bg-black py-10'>
-            <div className='flex gap-10 items-end justify-between container mx-auto'> 
+            <div className='flex flex-col items-center gap-10 xl:flex-row lg:items-end justify-between container mx-auto px-10'> 
                 <div className=' flex flex-col'>
-                    <h6 className=' dark:text-white font-poppinsSemiBold text-lg'>{heroData.subHeadingOne}</h6>
-                    <h5 className=' text-[#fd6f00] font-poppinsSemiBold text-lg'>{heroData.subHeadingTwo}</h5>
+                    <h6 className=' dark:text-white font-poppinsSemiBold md:text-sm lg:text-lg'>{heroData.subHeadingOne}</h6>
+                    <h5 className=' text-[#fd6f00] font-poppinsSemiBold md:text-sm lg:text-lg'>{heroData.subHeadingTwo}</h5>
 
-                    <h1 className='text-8xl dark:text-white font-poppinsSemiBold'>{heroData.headingOne}</h1>
-                    <h1 className=' ml-56 text-8xl dark:text-white font-poppinsSemiBold'>{heroData.headingTwo}</h1>
+                    <h1 className='  text-5xl lg:text-8xl dark:text-white font-poppinsSemiBold'>{heroData.headingOne}</h1>
+                    <h1 className=' sm:ml-28 lg:ml-56 text-5xl lg:text-8xl dark:text-white font-poppinsSemiBold'>{heroData.headingTwo}</h1>
 
-                    <p className=' dark:text-white mt-5 leading-8'>{heroData.description}</p>
+                    <p className=' dark:text-white mt-5 sm:leading-6 md:leading-8 font-poppinsRegular'>{heroData.description}</p>
 
-                    <button className=' text-white bg-[#fd6f00] p-3 w-40 rounded mt-5'>{heroData.button.label}</button>
+                    <button className=' text-white bg-[#fd6f00] p-3 w-40 rounded mt-5 font-poppinsRegular'>{heroData.button.label}</button>
                 </div>
-                <div className='flex flex-col items-center'>
-                    <div className='relative'>
-                        <div className=' relative h-[42rem] w-[35rem]'>
+                <div className='flex flex-col items-center justify-center w-full xl:w-1/2'>
+                    <div className='relative '>
+                        <div className=' relative h-[30rem] w-[20rem] md:h-[35rem] md:w-[28rem] lg:h-[42rem] lg:w-[35rem]'>
                             <Image className=' absolute object-contain' src={heroData.image} alt='hero-image' fill />
                         </div>
-                        {/* <div className='top-0 relative h-20 w-96'> */}
-                            <Image width={320} height={100} className=' left-28 top-24 absolute object-contain' src={rectangle} alt='hero-image'  />
-                        {/* </div> */}
+                        <div className='relative h-16 w-44 md:h-20 sm:w-52 md:w-80 lg:w-96 lg:left-24 md:left-16 sm:left-14 left-16 -top-[23rem] sm:-top-[24rem] md:-top-[30rem] lg:-top-[36rem]'>
+                            <Image className='  absolute object-contain' src={rectangle} alt='hero-image'  />
+                        </div>
                     </div>
-                    <ul className='flex items-center gap-5 mt-5'>
+                    <ul className='flex items-center gap-5 -mt-16'>
                         {
                             heroData.socialHandles?.map((el) => 
                                 <li key={el.url} className='relative h-7 w-7' >
