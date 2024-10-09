@@ -10,6 +10,7 @@ import fbLogoDark from '../../assets/fb-dark.svg'
 import twitterDark from '../../assets/twitter-dark.svg'
 import instagramDark from '../../assets/insta-dark.svg'
 import linkedInDark from '../../assets/linkedin-dark.svg'
+import Link from 'next/link'
 
 const heroData = {
     subHeadingOne: 'Hi i am',
@@ -78,16 +79,16 @@ export default function HeroServer() {
                             <Image className='  absolute object-contain' src={rectangle} alt='hero-image'  />
                         </div>
                     </div>
-                    <ul className='flex items-center gap-5 -mt-16'>
+                    <div className='flex items-center gap-5 -mt-16'>
                         {
                             heroData.socialHandles?.map((el) => 
-                                <li key={el.url} className='relative h-7 w-7' >
+                                <Link key={el.url} href={el.url} className='relative h-7 w-7' >
                                     <Image className='dark:hidden absolute object-contain' src={el.icon.light} alt='hero-image' fill />
                                     <Image className='hidden dark:block absolute object-contain' src={el.icon.dark} alt='hero-image' fill />
-                                </li>
+                                </Link>
                             )
                         }
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
