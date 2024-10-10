@@ -3,6 +3,7 @@ import React from 'react'
 import aboutMeImage from '../../assets/about-me.svg'
 import rectangle from '../../assets/rectangle.svg'
 import ProgressBar from '@/utils/ProgressBar'
+import HeadingDescription from '@/utils/HeadingDescription'
 
 const aboutData = {
     image: aboutMeImage,
@@ -44,8 +45,7 @@ export default function AboutServer() {
                     </div>
                 </div>
                 <div className='flex flex-col gap-5'>
-                    <h1 className=' text-5xl lg:text-8xl dark:text-white font-poppinsSemiBold'>{aboutData.heading}</h1>
-                    <p className=' dark:text-white font-poppinsRegular leading-8'>{aboutData.description}</p>
+                    <HeadingDescription heading={aboutData.heading} description={aboutData.description} />
 
                     <ul className='flex flex-col gap-5'>
                         {

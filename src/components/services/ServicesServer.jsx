@@ -4,6 +4,7 @@ import graphicDesign from '../../assets/graphic-design.svg'
 import appDesign from '../../assets/app-design.svg'
 import webDesign from '../../assets/webDesign.svg'
 import Image from 'next/image'
+import HeadingDescription from '@/utils/HeadingDescription'
 
 const servicesData = {
     heading: 'Services',
@@ -36,10 +37,7 @@ export default function ServicesServer() {
     return (
         <div className=' dark:bg-black py-20'>
             <div className='container mx-auto px-10 flex flex-col gap-14'>
-                <div className=' text-center'>
-                    <h1 className='text-5xl lg:text-8xl dark:text-white font-poppinsSemiBold' >{servicesData.heading}</h1>
-                    <p className='dark:text-white mt-5 sm:leading-6 md:leading-8 font-poppinsRegular md:max-w-[70%] mx-auto'>{servicesData.description}</p>
-                </div>
+                <HeadingDescription heading={servicesData.heading} description={servicesData.description} className={' text-center max-w-3xl mx-auto'} />
                 <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
                     {
                         servicesData.services?.map((el) => 
@@ -48,7 +46,7 @@ export default function ServicesServer() {
                                     <Image className=' absolute object-contain' src={el.icon} alt='icon' fill />
                                 </div>
                                 <h3 className=' font-poppinsSemiBold text-2xl'>{el.name}</h3>
-                                <p className=' font-poppinsRegular text-center'>{el.description}</p>
+                                <p className=' font-poppinsRegular text-center md:text-start'>{el.description}</p>
                             </li>
                         )
                     }
