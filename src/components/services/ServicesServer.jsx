@@ -35,7 +35,7 @@ const servicesData = {
 
 export default function ServicesServer() {
     return (
-        <div className=' dark:bg-black py-20'>
+        <div className=' dark:bg-[#1e1e1e] py-20'>
             <div className='container mx-auto px-10 flex flex-col gap-14'>
                 <HeadingDescription heading={servicesData.heading} description={servicesData.description} className={' text-center max-w-3xl mx-auto'} />
                 <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>

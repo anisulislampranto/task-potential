@@ -8,7 +8,7 @@ const contactData = {
 
 export default function ContactClient() {
   return (
-    <div className=' dark:bg-black py-20 space-y-10 px-10'>
+    <div className=' dark:bg-[#1e1e1e] py-20 space-y-10 px-10'>
         <HeadingDescription className={'text-center max-w-3xl mx-auto'} heading={contactData.heading} description={contactData.description} />
 
         <form action="" className='flex justify-center items-center gap-4 font-poppinsRegular'>

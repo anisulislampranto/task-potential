@@ -57,7 +57,7 @@ const heroData = {
 
 export default function HeroServer() {
     return (
-        <div className=' bg-white dark:bg-black py-10'>
+        <div className=' bg-white dark:bg-[#1e1e1e] py-10'>
             <div className='flex flex-col items-center gap-10 xl:flex-row lg:items-end justify-between container mx-auto px-10'> 
                 <div className=' flex flex-col'>
                     <h6 className=' dark:text-white font-poppinsSemiBold md:text-sm lg:text-lg'>{heroData.subHeadingOne}</h6>

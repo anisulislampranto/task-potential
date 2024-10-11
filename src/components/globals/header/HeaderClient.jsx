@@ -50,8 +50,8 @@ export default function HeaderClient() {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className='bg-white dark:bg-black dark:text-[#ffffff]'>
-            <navbar className='font-poppinsRegular p-5 flex items-center justify-between container mx-auto g-white dark:bg-black dark:text-[#ffffff]'>
+        <div className='bg-white dark:bg-[#1e1e1e] dark:text-[#ffffff] '>
+            <navbar className='font-poppinsRegular p-5 flex items-center justify-between container mx-auto g-white dark:bg-[#1e1e1e] dark:text-[#ffffff]'>
                 <div className=' block dark:hidden relative h-[50px] w-[210px] md:h-[67px] md:w-[279px]'>
                     <Image className=" absolute object-cover" src={headerData.logo.light} alt='logo' fill />
                 </div>
@@ -86,7 +86,7 @@ export default function HeaderClient() {
 
             {
                 open && 
-                <div className=' py-10 w-full bg-white dark:bg-black dark:text-[#ffffff] absolute top-24 z-50 flex xl:hidden flex-col items-center gap-10 text-lg'>
+                <div className=' py-10 w-full bg-white dark:bg-[#1e1e1e] dark:text-[#ffffff] absolute top-24 z-50 flex xl:hidden flex-col items-center gap-10 text-lg'>
                     <ul className='flex flex-col items-center gap-10  '>
                         {
                             headerData.navLinks.map((el) => 

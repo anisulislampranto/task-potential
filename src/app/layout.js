@@ -1,5 +1,6 @@
 import HeaderClient from "@/components/globals/header/HeaderClient";
 import "../styles/globals.css";
+import FooterServer from "@/components/globals/footer/FooterServer";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body className={``}>
         <HeaderClient />
         {children}
+        <FooterServer />
       </body>
     </html>
   );

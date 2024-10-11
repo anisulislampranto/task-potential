@@ -34,7 +34,7 @@ const aboutData = {
 
 export default function AboutServer() {
     return (
-        <div className=' bg-white dark:bg-black py-20'>
+        <div className=' bg-white dark:bg-[#1e1e1e] py-20'>
             <div className='flex flex-col-reverse items-center gap-10 xl:flex-row justify-between container mx-auto px-10'>
                 <div className='relative '>
                     <div className=' relative h-[30rem] w-[20rem] md:h-[35rem] md:w-[28rem] lg:h-[42rem] lg:w-[35rem]'>

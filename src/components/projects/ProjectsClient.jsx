@@ -143,7 +143,7 @@ export default function ProjectsClient() {
   const filteredProjects = type === 'all' ? projectsData.projects.flatMap(projectCategory => projectCategory.projects) : projectsData.projects.filter(el => el.type === type);
 
   return (
-    <div className=' dark:bg-black space-y-10 py-20 px-10'>
+    <div className=' dark:bg-[#1e1e1e] space-y-10 py-20 px-10'>
         <HeadingDescription heading={projectsData.heading} description={projectsData.description} className={' text-center max-w-3xl mx-auto'} />
         
         <ul className='flex justify-center gap-5 max-w-3xl mx-auto flex-wrap'>
