@@ -38,7 +38,7 @@ const testimonialsData = {
 export default function TestimonialsClient() {
     return (
         <div className='dark:bg-[#1e1e1e] py-20'>
-            <HeadingDescription heading={testimonialsData.heading} description={testimonialsData.description} className={'text-center max-w-3xl mx-auto '} />
+            <HeadingDescription heading={testimonialsData.heading} description={testimonialsData.description} className={'px-10 md:px-0 text-center max-w-3xl mx-auto '} />
             <Carousel carouselData={testimonialsData.testimonials} />
         </div>
     )
