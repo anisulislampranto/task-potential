@@ -12,7 +12,7 @@ export default function ContactClient() {
         <HeadingDescription className={'text-center max-w-3xl mx-auto'} heading={contactData.heading} description={contactData.description} />
 
         <form action="" className='flex justify-center items-center gap-4 font-poppinsRegular'>
-            <input type="text" placeholder='Enter Your Email' className=' w-[30rem] bg-[#f8f8f8] rounded-md outline-none border p-3' />
+            <input type="text" placeholder='Enter Your Email' className=' w-[25rem] bg-[#f8f8f8] rounded-md outline-none border p-3' />
             <input type="button" value="Contact Me" className=' text-white bg-[#fd6f00] p-3 rounded-md' />
         </form>
     </div>
