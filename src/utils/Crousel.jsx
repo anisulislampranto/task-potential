@@ -50,7 +50,7 @@ const Carousel = ({ carouselData }) => {
                             onMouseEnter={() => setHoveredIdx(index)}
                             onMouseLeave={() => setHoveredIdx(null)}
                         >   
-                            <div className={`absolute inset-0 bg-black transition-all duration-300 ${index !== hoveredIdx && index !== selectedIdx ? 'opacity-50 z-50' : 'opacity-0'}`}></div>
+                            <div className={`absolute inset-0 bg-white dark:bg-black transition-all duration-300 ${index !== hoveredIdx && index !== selectedIdx ? 'opacity-50 z-50' : 'opacity-0'}`}></div>
 
                             <div className='flex flex-col md:flex-row items-center gap-5 p-2 pt-5 md:pt-0'>
                                 <div className="relative w-[10rem] h-[10rem] md:w-[45rem] md:h-[15rem]">
