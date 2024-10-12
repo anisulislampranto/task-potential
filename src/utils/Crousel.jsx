@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 const Carousel = ({ carouselData }) => {
-    const [selectedIdx, setSelectedIdx] = useState(0);
+    const [selectedIdx, setSelectedIdx] = useState(1);
     const [hoveredIdx, setHoveredIdx] = useState(null);
     const gapSize = 0; // Size of the gap between images in pixels
     const [windowWidth, setWindowWidth] = useState(0); // Initialize window width state
@@ -44,7 +44,7 @@ const Carousel = ({ carouselData }) => {
                     {carouselData.map((data, index) => 
                         <li 
                             key={index}
-                            className={` rounded-md  mx-auto h-[37rem] w-[25rem] sm:h-[25rem] sm:w-[37.5rem] lg:h-[15rem] lg:w-[43.75rem] ${index === selectedIdx ? 'scale-120 bg-[#f8f8f8]' : 'scale-75 bg-white'} px-10 relative transition-transform duration-500 ease-in-out ${index !== selectedIdx ? 'shadow-black' : ''}`}
+                            className={` rounded-md  mx-auto h-[30rem] w-[25rem] sm:h-[25rem] sm:w-[37.5rem] lg:h-[15rem] lg:w-[43.75rem] ${index === selectedIdx ? 'scale-120 bg-[#f8f8f8]' : 'scale-75 bg-white'} px-5 md:px-10 relative transition-transform duration-500 ease-in-out ${index !== selectedIdx ? 'shadow-black' : ''}`}
                             style={{ marginRight: index !== carouselData.length - 1 ? `${gapSize}px` : '0' }}
                             onClick={() => setSelectedIdx(index)}
                             onMouseEnter={() => setHoveredIdx(index)}
@@ -52,7 +52,7 @@ const Carousel = ({ carouselData }) => {
                         >   
                             <div className={`absolute inset-0 bg-black transition-all duration-300 ${index !== hoveredIdx && index !== selectedIdx ? 'opacity-50 z-50' : 'opacity-0'}`}></div>
 
-                            <div className='flex flex-col md:flex-row items-center gap-5 p-2 pt-5 md:pt-0'>
+                            <div className='flex flex-col justify-center md:flex-row items-center gap-5 p-2 mt-5 lg:mt-0 md:pt-0'>
                                 <div className="relative w-[10rem] h-[10rem] md:w-[45rem] md:h-[15rem]">
                                     <Image fill src={data.image} alt="image" className="object-contain absolute rounded-full z-40" />
                                 </div>

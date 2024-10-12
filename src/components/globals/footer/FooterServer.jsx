@@ -91,7 +91,7 @@ export default function FooterServer() {
                 <div className='flex justify-center gap-10 flex-wrap'>
                     {
                         footerData.navLinks?.map((el) => 
-                            <Link href={el.url} key={el.label} className='hover:text-gray-500 cursor-pointer'>
+                            <Link href={el.url} key={el.label} className='hover:text-gray-500 cursor-pointer dark:text-white'>
                                 {el.label}
                             </Link>
                         )
