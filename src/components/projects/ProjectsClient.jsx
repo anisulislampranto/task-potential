@@ -144,7 +144,8 @@ export default function ProjectsClient() {
 
   return (
     <div className=' dark:bg-[#1e1e1e] space-y-10 py-20'>
-        <HeadingDescription heading={projectsData.heading} description={projectsData.description} className={' text-center max-w-3xl mx-auto px-5 md:px-0'} />
+
+        <HeadingDescription heading={projectsData.heading} description={projectsData.description} className={' text-center max-w-3xl mx-auto px-10 md:px-0'} />
         
         <ul className='flex justify-center gap-5 max-w-3xl mx-auto flex-wrap px-5 md:px-0'>
           <li key={'all'} className={` cursor-pointer capitalize rounded-md font-poppinsRegular ${type === 'all' ? 'bg-[#fd6f00] text-white' : 'bg-[#f8f8f8]' } px-5 p-2`} onClick={() => setType('all')} >All</li>
