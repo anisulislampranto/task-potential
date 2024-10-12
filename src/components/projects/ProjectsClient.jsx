@@ -143,11 +143,11 @@ export default function ProjectsClient() {
   const filteredProjects = type === 'all' ? projectsData.projects.flatMap(projectCategory => projectCategory.projects) : projectsData.projects.filter(el => el.type === type);
 
   return (
-    <div className=' dark:bg-[#1e1e1e] space-y-10 py-20 px-10'>
+    <div className=' dark:bg-[#1e1e1e] space-y-10 py-20'>
         <HeadingDescription heading={projectsData.heading} description={projectsData.description} className={' text-center max-w-3xl mx-auto'} />
         
         <ul className='flex justify-center gap-5 max-w-3xl mx-auto flex-wrap'>
-          <li key={'all'} className={`capitalize rounded-md font-poppinsRegular ${type === 'all' ? 'bg-[#fd6f00] text-white' : 'bg-[#f8f8f8]' } px-5 p-2`} onClick={() => setType('all')} >All</li>
+          <li key={'all'} className={` cursor-pointer capitalize rounded-md font-poppinsRegular ${type === 'all' ? 'bg-[#fd6f00] text-white' : 'bg-[#f8f8f8]' } px-5 p-2`} onClick={() => setType('all')} >All</li>
           {
             projectsData.projects.map((el) => 
               <li key={el.type} className={`capitalize cursor-pointer rounded-md font-poppinsRegular ${type === el.type  ? 'bg-[#fd6f00] text-white' : 'bg-[#f8f8f8] text-center' } p-2`} onClick={() => setType(el.type)} >{el.type}</li>
